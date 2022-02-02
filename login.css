@@ -1,0 +1,59 @@
+body{
+    margin:10px;
+    text-align:center;
+    background-color: gainsboro;
+    background-image: linear-gradient(to right,red,black);
+
+}
+marquee{
+    background-color:rgb(224, 222, 221) ;
+    color:rgb(250, 24, 24);
+    font-weight: bold;
+    font-family: cursive;
+   
+}
+h1{
+    color:ghostwhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+h2{
+    color:rgb(8, 8, 8);
+}
+.zom{
+    width:20%;
+    height: 50px;
+    
+}
+img{
+    width:80%;
+    height:300px;
+    box-shadow:  20px 30px 10px 0 rgba(7, 7, 7, 0.18);
+    
+}
+.form{
+    
+    height: 200px;
+    width:50%;
+    padding: 10px 200px 50px 470px;
+
+}
+table{
+    
+    border:1px  black;
+    margin:20px;
+    padding:40px;
+    font-size: 20px;
+    box-shadow:  20px 10px 10px 0 rgba(0, 0, 0, 0.18);
+    background-color: white;
+}
+a:hover{
+    background-color:white;
+   
+
+}
+button{
+    padding:5px;
+    box-shadow:  15px 10px 10px 0 rgba(0, 0.5, 0.2, 0.18);
+    
+}
