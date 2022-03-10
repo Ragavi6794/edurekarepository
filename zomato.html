@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ragavi.M">
+  <meta name="description" content="zomato food order,online food,zomato,online brakefast,brakefast,idli">
+  <meta http-equiv="refresh" content="25">
+  <title>Zomato Online Restaurant</title>
+  <!--link favicon-->
+  <link rel="icon" href="images/zomato.jpg">
+  <!-- css link -->
+  <link rel="stylesheet" type="text/css" href="zomato.css">
+  <!-- bootstrap files -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Navbar for header  -->
+  <nav class="navbar navbar-danger bg-danger">
+    <a class="navbar-brand brand">
+      <img src="images/images.jpg" class="rounded-circle shadow rounded" alt="Zomato" width="60px"
+        height="60px">&nbsp;&nbsp;&nbsp;
+      <span class="zom"><i>Zomato</i></span>
+    </a>
+    <!-- login create -->
+    <div class="shadow rounded">
+      <button class="btn btn-outline-light " type="submit">
+        <!-- loginicon -->
+        <i class="bi bi-person-lines-fill"></i>&nbsp;&nbsp;
+        <a class="text" href="login.html">Login</a>
+      </button>&nbsp;&nbsp;&nbsp;
+      <button id="create" class="btn btn-outline-light button" type="submit" data-bs-toggle="modal"
+        data-bs-target="#demo">
+        <!-- createicon -->
+        <i class="bi bi-person-plus-fill"></i>&nbsp;&nbsp;Create Account
+      </button>
+    </div>
+  </nav>
+  <!-- Modal Popup box for create account -->
+  <div class="modal fade" id="demo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger">Create Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table>
+            <tr>
+              <td>UserName:</td>
+              <td><input type="text" class="form-control" placeholder="Enter Your Name or phoneno"></td>
+            </tr>
+            <tr>
+              <td>Email id:</td>
+              <td><input type="email" class="form-control" placeholder="Enter Your VaidEmail"></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td><input type="password" class="form-control" placeholder="Only 6 char"></td>
+            </tr>
+            <tr>
+              <td>Mobile No:</td>
+              <td><input type="number" class="form-control" placeholder="Valid mobile number"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Account create cancelled">Cancel</button>
+          <!--Tooltip  -->
+          <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Account created Successfully">Submit</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Save changes Successfully">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- inline Javascript for Tooltip -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <!-- container-->
+  <div class="shadow zomato">
+    <img src="images/homepageimg.png" alt="Zomato" width="100%" height="450px">
+    <div class="logo">
+      <img src="images/zomato.png" class="rounded-circle" alt="" width="100px">
+    </div>
+    <div class="head">
+      <h1> Find the best Restaurants,Cafes,Bars</h1>
+      <!-- inputtag -->
+      <div class="mydropdown">
+        <Select class="select">
+          <option>Select</option>
+          <option>Surajbura,Bangalore</option>
+          <option>HSR Layout,Bangalore</option>
+          <option>Kormangala,Bangalore</option>
+          <option>Bennerghata Road,Bangalore</option>
+          <option>MysorePalace,Bangalore</option>
+        </Select>
+      </div>
+      <!-- Search location -->
+    <div class="input-group box">
+        <span class="input-group-text"><i class="bi-search"></i></span>
+        <input type="text" class="place" placeholder="Please Enter Your Restaurant Name">
+      </div>
+    </div><br>
+    <!-- content -->
+    <div class="background">
+      <div class="container-fluid ">
+        <h2 class="quick">Quick Searches</h2>
+        <p class="text-secondary discover">Discover restaurants by type of meal.</p>
+        <!-- grid col1 -->
+        <div class="row container-fluid">
+          <div class="col-sm-4">
+            <div class="card shadow mywidth">
+              <div class="row ">
+                <div class="col-sm-4">
+                  <img src="images/breakfast.jpg" class="myshadow" alt="brakefast" width="150px" height="147px">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body mycard">
+                    <h5 class="card-title mytitle">Breakfast</h5>
+                    <p class="card-text">
+                    <h5 class="text-secondary">Start your day with exclusive breakfast.</h5>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--col2 -->
+          <div class="col-sm-4 ">
+            <div class="card shadow mywidth">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="images/food.jpg" class="myshadow" alt="lunch" width="150px" height="147px">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body mycard">
+                    <h5 class="card-title mytitle">Lunch</h5>
+                    <p class="card-text">
+                    <h5 class="text-secondary">Start your day with exclusive lunch.</h5>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col3 -->
+          <div class="col-sm-4 ">
+            <div class="card shadow mywidth">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="images/snacks.png" class="myshadow" alt="brakefast" width="150px" height="147px">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body mycard">
+                    <h5 class="card-title mytitle">Snacks</h5>
+                    <p class="card-text">
+                    <h5 class="text-secondary">Start your day with exclusive snacks.</h5>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 col4-->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card shadow myrow">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="images/dinner.png" class="myshadow" alt="dinner" width="150px" height="147px">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body mycard">
+                      <h5 class="card-title mytitle">Dinner</h5>
+                      <p class="card-text">
+                      <h5 class="text-secondary">Start your day with exclusive dinners.</h5>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col5 -->
+            <div class="col-sm-4">
+              <div class="card shadow myrow " style="margin-left: 10px;">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="images/drinks.png" class="myshadow" alt="drinks" width="150px" height="147px">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body mycard">
+                      <h5 class="card-title mytitle">Drinks</h5>
+                      <p class="card-text">
+                      <h5 class="text-secondary">Start your day with exclusive drinks.</h5>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col6 -->
+            <div class="col-sm-4">
+              <div class="card shadow myrow" style="margin-left: 18px;">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="images/nightlife.png" class="myshadow" alt="brakefast" width="150px" height="147px">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body mycard">
+                      <h5 class="card-title mytitle">NightLife</h5>
+                      <p class="card-text">
+                      <h5 class="text-secondary">Start your day with exclusive nightlife.</h5>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
